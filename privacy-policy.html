@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ring Work — Privacy Policy</title>
+<style>
+  :root {
+    --accent: #6B4F3B;
+    --bg: #FAF6F0;
+    --card-bg: #EFE2D1;
+    --border: #DCC9AE;
+    --border-soft: #E4D4BC;
+    --text: #8A6B4F;
+    --muted: #A88E72;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .header {
+    text-align: center;
+    padding: 56px 20px 36px;
+    background: linear-gradient(180deg, rgba(107,79,59,0.12) 0%, rgba(107,79,59,0) 70%);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .header .app-name {
+    display: inline-block;
+    font-size: 14px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 700;
+    margin-bottom: 14px;
+  }
+
+  .header h1 {
+    margin: 0;
+    font-size: 32px;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+  }
+
+  .header p {
+    margin: 10px 0 0;
+    color: var(--muted);
+    font-size: 15px;
+  }
+
+  .header nav {
+    margin-top: 18px;
+  }
+
+  .header nav a {
+    color: var(--accent);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    border: 1px solid rgba(107,79,59,0.4);
+    border-radius: 3px;
+    padding: 6px 16px;
+    display: inline-block;
+  }
+
+  .header nav a:hover {
+    background: rgba(107,79,59,0.1);
+  }
+
+  main {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 36px 20px 10px;
+  }
+
+  .intro {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
+    border-radius: 3px;
+    padding: 18px 20px;
+    margin-bottom: 36px;
+    color: var(--text);
+    font-size: 15px;
+  }
+
+  section {
+    margin-bottom: 32px;
+    padding-bottom: 28px;
+    border-bottom: 1px solid var(--border-soft);
+  }
+
+  section:last-of-type {
+    border-bottom: none;
+  }
+
+  section h2 {
+    font-size: 18px;
+    margin: 0 0 10px;
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+  }
+
+  section h2 .num {
+    color: var(--accent);
+    font-weight: 800;
+    font-size: 16px;
+  }
+
+  section p {
+    margin: 0;
+    color: var(--text);
+    font-size: 15.5px;
+  }
+
+  .contact {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .contact h2 {
+    justify-content: center;
+    margin-bottom: 6px;
+  }
+
+  .contact a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .contact a:hover {
+    text-decoration: underline;
+  }
+
+  footer {
+    text-align: center;
+    padding: 32px 20px 48px;
+    color: var(--muted);
+    font-size: 13px;
+  }
+
+  footer .dot {
+    color: var(--accent);
+  }
+
+  .page-divider {
+    max-width: 680px;
+    margin: 12px auto 40px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    color: var(--muted);
+    font-size: 13px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .page-divider::before,
+  .page-divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+  }
+
+  #support .section-title {
+    font-size: 26px;
+    font-weight: 800;
+    margin: 0 0 6px;
+    letter-spacing: -0.02em;
+  }
+
+  #support .section-title .accent-dot {
+    color: var(--accent);
+  }
+
+  #support .lead {
+    color: var(--muted);
+    font-size: 15.5px;
+    margin: 0 0 28px;
+  }
+
+  .info-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
+    border-radius: 3px;
+    padding: 18px 20px;
+    margin-bottom: 28px;
+  }
+
+  .info-card .row {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 6px 0;
+    font-size: 15px;
+  }
+
+  .info-card .row + .row {
+    border-top: 1px solid var(--border-soft);
+  }
+
+  .info-card .label {
+    color: var(--muted);
+  }
+
+  .info-card .value {
+    color: var(--text);
+    text-align: right;
+    font-weight: 600;
+  }
+
+  .info-card .value a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+
+  .info-card .value a:hover {
+    text-decoration: underline;
+  }
+
+  .faq-title {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0 0 14px;
+    color: var(--text);
+  }
+
+  .faq-item {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    padding: 16px 20px;
+    margin-bottom: 12px;
+  }
+
+  .faq-item .q {
+    font-weight: 700;
+    font-size: 15px;
+    margin: 0 0 6px;
+    color: var(--text);
+  }
+
+  .faq-item .q::before {
+    content: "Q ";
+    color: var(--accent);
+    font-weight: 800;
+  }
+
+  .faq-item .a {
+    margin: 0;
+    color: var(--text);
+    font-size: 14.5px;
+  }
+
+  @media (max-width: 480px) {
+    .info-card .row {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 2px;
+    }
+    .info-card .value {
+      text-align: left;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .header h1 {
+      font-size: 26px;
+    }
+    main {
+      padding: 28px 16px 10px;
+    }
+  }
+</style>
+</head>
+<body>
+
+  <div class="header">
+    <span class="app-name">Ring Work</span>
+    <h1>Privacy Policy</h1>
+    <p>AI Shadow Boxing Trainer</p>
+    <nav><a href="#support">Jump to Support →</a></nav>
+  </div>
+
+  <main>
+    <div class="intro">
+      Ring Work is an AI shadow boxing trainer app that uses your phone's camera to track punches and provide real-time coaching feedback. Your privacy is important to us. This policy explains what we collect, how we use it, and your choices.
+    </div>
+
+    <section>
+      <h2><span class="num">1.</span> Camera &amp; Body Tracking Data</h2>
+      <p>Ring Work uses your device's camera for real-time body tracking. Your camera feed is processed entirely on-device using Apple's Vision framework. No video, images, or raw camera data is ever recorded, stored, or transmitted off your device. Pose landmark data is computed locally and discarded when your session ends. Ring Work does not have access to any footage of you.</p>
+    </section>
+
+    <section>
+      <h2><span class="num">2.</span> Session &amp; Training Data</h2>
+      <p>Ring Work logs your training sessions locally on your device, including: session date and duration, round configuration, punch counts by type, drill accuracy scores, and weekly training volume. This data powers your in-app progress charts and is not linked to any account or personal identifier.</p>
+    </section>
+
+    <section>
+      <h2><span class="num">3.</span> No Account Required</h2>
+      <p>Ring Work does not require an account. No personal information (name, email, date of birth) is needed to use the app. If you purchase a premium subscription, billing is handled entirely by Apple through the App Store — Ring Work never receives your payment details.</p>
+    </section>
+
+    <section>
+      <h2><span class="num">4.</span> Data Storage &amp; Security</h2>
+      <p>All data is stored locally on your device. Ring Work operates no servers or cloud storage. Deleting the app permanently removes all stored data. iCloud Backup may back up your local app data depending on your iOS settings.</p>
+    </section>
+
+    <section>
+      <h2><span class="num">5.</span> Analytics &amp; Crash Reporting</h2>
+      <p>Ring Work may use Apple's anonymized analytics tools if you have opted in through iOS settings. This data contains no camera data or training logs and is used only to fix bugs. You can control this under Settings → Privacy &amp; Security → Analytics &amp; Improvements.</p>
+    </section>
+
+    <section>
+      <h2><span class="num">6.</span> Third-Party Services</h2>
+      <p>Ring Work does not share your data with advertisers, data brokers, or analytics platforms. The only third-party relationship is Apple's App Store for app distribution and purchases.</p>
+    </section>
+
+    <section>
+      <h2><span class="num">7.</span> Children's Privacy</h2>
+      <p>Ring Work is not directed at children under 13 and does not knowingly collect personal information from children.</p>
+    </section>
+
+    <section>
+      <h2><span class="num">8.</span> Your Choices &amp; Controls</h2>
+      <p>You can revoke camera access at any time under Settings → Privacy &amp; Security → Camera. Session logs can be cleared from within the app. Deleting the app removes all local data.</p>
+    </section>
+
+    <section>
+      <h2><span class="num">9.</span> Changes to This Policy</h2>
+      <p>We may update this policy periodically. Continued use of Ring Work after changes constitutes acceptance of the updated policy.</p>
+    </section>
+
+    <section class="contact">
+      <h2><span class="num">10.</span> Contact Us</h2>
+      <p>Ring Work Support<br>
+      <a href="mailto:johnnyplanch@gmail.com">johnnyplanch@gmail.com</a></p>
+    </section>
+  </main>
+
+  <div class="page-divider">Support</div>
+
+  <main id="support">
+    <h2 class="section-title"><span class="accent-dot">●</span> Support</h2>
+    <p class="lead">Have a question, bug report, or feedback? We're here to help.</p>
+
+    <div class="info-card">
+      <div class="row">
+        <span class="label">Email</span>
+        <span class="value"><a href="mailto:johnnyplanch@gmail.com">johnnyplanch@gmail.com</a></span>
+      </div>
+      <div class="row">
+        <span class="label">Response time</span>
+        <span class="value">1–2 business days</span>
+      </div>
+    </div>
+
+    <h3 class="faq-title">Frequently Asked Questions</h3>
+
+    <div class="faq-item">
+      <p class="q">The app isn't detecting my punches</p>
+      <p class="a">Check your camera framing, stand 6–8 feet back from your device, and make sure you're in a well-lit area.</p>
+    </div>
+
+    <div class="faq-item">
+      <p class="q">How do I change my stance?</p>
+      <p class="a">You can change your stance in the app settings before starting a session.</p>
+    </div>
+
+    <div class="faq-item">
+      <p class="q">How do I cancel my subscription?</p>
+      <p class="a">Subscriptions are managed through Apple. Go to Settings → Apple ID → Subscriptions to cancel.</p>
+    </div>
+
+    <div class="faq-item">
+      <p class="q">How do I delete my training data?</p>
+      <p class="a">You can clear your training data from within the app settings.</p>
+    </div>
+  </main>
+
+  <footer>
+    Effective Date: June 23, 2025 <span class="dot">&middot;</span> Ring Work
+  </footer>
+
+</body>
+</html>
